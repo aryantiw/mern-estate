@@ -17,7 +17,7 @@ const SignUp = () => {
 
       <div className='flex gap-2 mt-5'>
         <p>Have an Account</p>
-        <span className='text-b;ie-700'>Sign In</span>
+        <span className='text-blue-700'>Sign In</span>
       </div>
     </div>
   )
