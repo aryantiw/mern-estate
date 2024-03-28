@@ -47,14 +47,13 @@ const SignIn = () => {
 
       }
 
-      dispatch(signInSuccess(data.user))
+      dispatch(signInSuccess(data))
       navigate("/")
 
 
     } catch (error) {
 
-      setLoading(false);
-      setError(error.message);
+      dispatch(signInFailure(error.message));
     }
 
 
