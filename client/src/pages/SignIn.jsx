@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import {signInStart, signInSuccess, signInFailure } from "../redux/user/userSlice";
+import OAuth from '../components/OAuth';
 
 const SignIn = () => {
 
@@ -77,6 +78,8 @@ const SignIn = () => {
         <button className='bg-slate-700 text-white p-3 rounded-lg uppercase hover:opacity-95'>
           {loading ? "Loading..." : "Sign In"}
         </button>
+
+        <OAuth></OAuth>
 
 
       </form>
